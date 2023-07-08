@@ -25,7 +25,7 @@ class App {
     this.app.use(express.json());
 
     this.app.use((req, res, next) => {
-      res.setHeader('Access-Control-Allow-Origin', 'https://andormedproyect.web.app');
+      res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
       res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
       res.setHeader('Access-Control-Max-Age', '86400');
