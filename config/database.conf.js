@@ -1,12 +1,12 @@
 import { Sequelize } from 'sequelize';
 
 export const database = new Sequelize({
-  host: '127.0.0.1',
-  database: 'prueba',
+  host: 'containers-us-west-84.railway.app',
+  database: 'railway',
   username: 'root',
-  password: 'root',
+  password: 'mCmZRaU5WMSJ9vTwUoIi',
   dialect: 'mysql',
-  port: 3306,
+  port: 7537,
   logging: false
 });
 
