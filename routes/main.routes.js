@@ -12,7 +12,7 @@ export class mainRoutes {
     app.get('/readUsers', userController.readUsers);
     app.post('/updateUser', userController.updateUser);
     app.post('/deleteUser', userController.deleteUser);
-    app.post('/userRegistration', userController.createUser);
+    app.post('/userRegistration', userController.userRegistration);
     app.post('/login', userController.login);
 
     function verifyToken(req, res, next) {
