@@ -79,15 +79,15 @@ class UserController {
           const response = { ok: true, message: 'Inicio de sesión exitoso', user, token };
           return res.status(200).json(response);
         } else {
-          const response = { ok: false, message: 'Credenciales inválidas' };
+          const response = { ok: false, message: 'La contraseña es incorrecta' };
           return res.status(401).json(response);
         }
       } else {
-        const response = { ok: false, message: 'La contraseña es incorrecta' };
+        const response = { ok: false, message: 'Correo electronico no registrado' };
         return res.status(401).json(response);
       }
     } catch (error) {
-      const response = { ok: false, message: 'Correo electronico no registrado', error };
+      const response = { ok: false, message: error };
       return res.status(500).json(response);
     }
   }
