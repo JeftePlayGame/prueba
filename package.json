@@ -1,0 +1,24 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "prueba ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "",
+    "start": "nodemon index.js"
+  },
+  "author": "Nik985",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.1",
+    "mysql2": "^3.4.4",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
