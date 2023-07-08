@@ -12,6 +12,7 @@ export class mainRoutes {
     app.get('/readUsers', userController.readUsers);
     app.post('/updateUser', userController.updateUser);
     app.post('/deleteUser', userController.deleteUser);
+    app.post('/userRegistration', userController.createUser);
     app.post('/login', userController.login);
 
     function verifyToken(req, res, next) {
@@ -28,7 +29,6 @@ export class mainRoutes {
       });
     }    
 
-    app.post('/userRegistration', userController.userRegistration);
     app.get('/getUserByToken', verifyToken, userController.getUserByToken);
     app.get('/mostrarPacientes', verifyToken, userController.mostrarPacientes);
     app.get('/logout', userController.logout);
